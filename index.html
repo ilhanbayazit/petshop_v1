@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agalar Petshop — Dostlarınız İçin En İyisi</title>
+    <meta name="description" content="Agalar Petshop — Evcil dostlarınız için kaliteli ürünler, bakım hizmetleri ve güvenilir danışmanlık.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== GLOBAL ARKA PLAN CANVAS ===== -->
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="bg-paw"></div>
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+        <div class="blob b4"></div>
+        <div class="blob b5"></div>
+        <div class="blob b6"></div>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🐾</span>
+                <span class="logo-text">Agalar <strong>Petshop</strong></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home"        class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="#hakkimizda"  class="nav-link">Hakkımızda</a></li>
+                <li><a href="#hizmetler"   class="nav-link">Hizmetler</a></li>
+                <li><a href="#galeri"      class="nav-link">Galeri</a></li>
+                <li><a href="#iletisim"    class="nav-link nav-cta">İletişim</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menüyü Aç/Kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero">
+
+        <!-- Hero sanat katmanı: halkalar, nokta grid, hayvan silüetleri -->
+        <div class="hero-art" aria-hidden="true">
+            <div class="hr-ring hr-r1">🐕</div>
+            <div class="hr-ring hr-r2">🐕</div>
+            <div class="hr-ring hr-r3">🐕</div>
+            <div class="hr-ring hr-r4">🐕</div>
+            <div class="hr-dots hr-d1">🐕</div>
+            <div class="hr-dots hr-d2">🐕</div>
+            <div class="hr-dots hr-d3">🐕</div>
+            <div class="hr-pet hr-pet-dog">🐕</div>
+            <div class="hr-pet hr-pet-cat">🐈</div>
+        </div>
+
+        <div class="container hero-container">
+
+            <!-- Sol: Metin -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🐾</span> Güvenilir Petshop Deneyimi
+                </div>
+                <h1 class="hero-title">
+                    Dostlarınız İçin <span class="highlight">Güvenilir</span> ve Sevgi Dolu Petshop
+                </h1>
+                <p class="hero-desc">
+                    Agalar Petshop olarak evcil dostlarınız için kaliteli ürünler, bakım hizmetleri
+                    ve güvenilir danışmanlık sunuyoruz.
+                </p>
+                <div class="hero-actions">
+                    <a href="#iletisim" class="btn btn-primary">Bize Ulaş →</a>
+                    <a href="#hizmetler" class="btn btn-outline">Hizmetlerimiz</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>500+</strong>
+                        <span>Mutlu Müşteri</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong>200+</strong>
+                        <span>Ürün Çeşidi</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <strong>7/7</strong>
+                        <span>Destek</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sağ: Animasyonlu Kart -->
+            <div class="hero-visual">
+                <div class="hero-card floating">
+                    <div class="card-glow"></div>
+                    <div class="pets-row">
+                        <div class="pet-bubble">🐶</div>
+                        <div class="pet-bubble">🐱</div>
+                        <div class="pet-bubble">🐦</div>
+                        <div class="pet-bubble">🐠</div>
+                    </div>
+                    <div class="card-brand">
+                        <span class="brand-icon">🐾</span>
+                        <div>
+                            <p class="brand-name">Agalar Petshop</p>
+                            <p class="brand-tagline">Güvenilir &amp; Sevgi Dolu</p>
+                        </div>
+                    </div>
+                    <p class="card-desc">Her evcil hayvana özel ürünler ve hizmetler</p>
+                    <div class="card-chips">
+                        <span class="chip">✅ Kaliteli Ürünler</span>
+                        <span class="chip">❤️ Güvenilir Hizmet</span>
+                    </div>
+                </div>
+                <div class="badge-float badge-top">⭐ kopek</div>
+                <div class="badge-float badge-bottom">🏆 Kedi</div>
+                <div class="badge-float badge-bottom">🏆 aptal bahadır</div>
+                <div class="badge-float badge-bottom">🏆 orospu bahadır</div>
+            </div>
+
+        </div>
+        <!-- Geçiş dalgası -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#FFF7ED"/>
+            </svg>
+        </div>
+    </section>
+
+     <!-- ===== HAYVAN GEÇİŞ ŞERİDİ 1: Köpek & Kedi Dünyası ===== -->
+    <div class="animal-parade" aria-hidden="true">
+        <div class="parade-track"><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span></div>
+        <div class="parade-track" aria-hidden="true"><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span></div>
+        <div class="parade-track" aria-hidden="true"><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span></div>
+    </div>
+
+    <!-- ========== HAKKIMIZDA ========== -->
+
+    <section id="hakkimizda" class="about">
+        <div class="section-art" aria-hidden="true">
+            <div class="sa-ring sa-r1"></div>
+            <div class="sa-ring sa-r2"></div>
+            <div class="sa-pet sa-p1">🐕</div>
+            <div class="sa-pet sa-p2">🐈</div>
+        </div>
+        <div class="container">
+            <div class="about-grid">
+
+                <div class="about-content animate-on-scroll">
+                    <span class="section-tag">Hakkımızda</span>
+                    <h2 class="section-title">Evcil Dostlarınıza <span class="highlight">Özel</span> Bir Mağaza</h2>
+                    <p class="about-text">
+                        Agalar Petshop olarak, evcil hayvanlarınızın mutluluğu ve sağlığı bizim için en büyük
+                        önceliktir. Yılların deneyimi ve sevgiyle dolu hizmet anlayışımızla, dostlarınız için
+                        en iyi ürünleri ve hizmetleri sunmak için buradayız.
+                    </p>
+                    <p class="about-text">
+                        Her evcil hayvanın kendine özgü ihtiyaçları olduğunu biliyoruz. Bu nedenle köpekten
+                        kediye, kuştan balığa kadar geniş ürün yelpazemiz ve uzman danışmanlık hizmetimizle
+                        her zaman yanınızdayız.
+                    </p>
+                    <a href="#hizmetler" class="btn btn-primary">Hizmetlerimizi Keşfet →</a>
+                </div>
+
+                <div class="about-cards animate-on-scroll delay-2">
+                    <div class="about-card">
+                        <div class="about-card-icon">🛡️</div>
+                        <div>
+                            <h3>Güvenilir Hizmet</h3>
+                            <p>Uzman kadromuzla her zaman güvenilir ve kaliteli hizmet sunuyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">⭐</div>
+                        <div>
+                            <h3>Kaliteli Ürünler</h3>
+                            <p>Seçilmiş, güvenli ve evcil hayvanlarınız için uygun ürünler.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-icon">❤️</div>
+                        <div>
+                            <h3>Hayvan Dostu Yaklaşım</h3>
+                            <p>Her evcil hayvana sevgi ve özenle yaklaşıyor, mutluluklarını ön planda tutuyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HAYVAN GEÇİŞ ŞERİDİ 1 (tekrar): Köpek & Kedi Dünyası ===== -->
+    <div class="animal-parade" aria-hidden="true">
+        <div class="parade-track"><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span></div>
+        <div class="parade-track" aria-hidden="true"><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span></div>
+        <div class="parade-track" aria-hidden="true"><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐈</span><span class="paw">🐾</span><span>🦴</span><span class="paw">🐾</span><span>🐩</span><span class="paw">🐾</span><span>🎾</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span></div>
+    </div>
+
+    <!-- ========== HİZMETLER ========== -->
+    <section id="hizmetler" class="services">
+        <div class="section-art" aria-hidden="true">
+            <div class="sa-ring sa-r1"></div>
+            <div class="sa-ring sa-r2"></div>
+            <div class="sa-pet sa-p1">🐩</div>
+            <div class="sa-pet sa-p2">🐱</div>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Hizmetlerimiz</span>
+                <h2 class="section-title">Dostlarınız İçin <span class="highlight">Her Şey</span> Burada</h2>
+                <p class="section-desc">Evcil hayvanlarınızın tüm ihtiyaçlarını karşılayan kapsamlı hizmetlerimizi keşfedin.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">🦴</div>
+                    <h3>Mama ve Aksesuar Ürünleri</h3>
+                    <p>Evcil hayvanlarınız için özenle seçilmiş mama çeşitleri ve aksesuarlar.</p>
+                </div>
+                <div class="service-card animate-on-scroll delay-1">
+                    <div class="service-icon">✂️</div>
+                    <h3>Evcil Hayvan Bakımı</h3>
+                    <p>Profesyonel tıraş, banyo ve bakım hizmetleri ile dostlarınız her zaman temiz ve şık.</p>
+                </div>
+                <div class="service-card animate-on-scroll delay-2">
+                    <div class="service-icon">🏥</div>
+                    <h3>Veteriner Yönlendirme</h3>
+                    <p>Güvenilir veteriner kliniklerine yönlendirme ve sağlık danışmanlığı hizmeti.</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">🐾</div>
+                    <h3>Kedi &amp; Köpek Ürünleri</h3>
+                    <p>Kedi ve köpekler için geniş ürün yelpazesi: mama, oyuncak, yatak, tasma ve daha fazlası.</p>
+                </div>
+                <div class="service-card animate-on-scroll delay-1">
+                    <div class="service-icon">🐟</div>
+                    <h3>Kuş ve Balık Ürünleri</h3>
+                    <p>Kuş kafesleri, akvaryum malzemeleri ve tüm su canlıları için özel ürünler.</p>
+                </div>
+                <div class="service-card animate-on-scroll delay-2">
+                    <div class="service-icon">💬</div>
+                    <h3>Danışmanlık</h3>
+                    <p>Evcil hayvanınızın beslenmesi, bakımı ve sağlığı konularında ücretsiz uzman danışmanlık.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HAYVAN GEÇİŞ ŞERİDİ 2: Kuş & Balık Dünyası (ters yön) ===== -->
+    <div class="animal-parade" aria-hidden="true">
+        <div class="parade-track reverse"><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐟</span><span class="paw">🐾</span><span>🦢</span><span class="paw">🐾</span><span>🦩</span><span class="paw">🐾</span><span>🦦</span><span class="paw">🐾</span><span>🐬</span><span class="paw">🐾</span><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐟</span><span class="paw">🐾</span><span>🦢</span><span class="paw">🐾</span><span>🦩</span><span class="paw">🐾</span><span>🦦</span><span class="paw">🐾</span><span>🐬</span><span class="paw">🐾</span></div>
+        <div class="parade-track reverse" aria-hidden="true"><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐟</span><span class="paw">🐾</span><span>🦢</span><span class="paw">🐾</span><span>🦩</span><span class="paw">🐾</span><span>🦦</span><span class="paw">🐾</span><span>🐬</span><span class="paw">🐾</span><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐟</span><span class="paw">🐾</span><span>🦢</span><span class="paw">🐾</span><span>🦩</span><span class="paw">🐾</span><span>🦦</span><span class="paw">🐾</span><span>🐬</span><span class="paw">🐾</span></div>
+        <div class="parade-track reverse" aria-hidden="true"><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐟</span><span class="paw">🐾</span><span>🦢</span><span class="paw">🐾</span><span>🦩</span><span class="paw">🐾</span><span>🦦</span><span class="paw">🐾</span><span>🐬</span><span class="paw">🐾</span><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐟</span><span class="paw">🐾</span><span>🦢</span><span class="paw">🐾</span><span>🦩</span><span class="paw">🐾</span><span>🦦</span><span class="paw">🐾</span><span>🐬</span><span class="paw">🐾</span></div>
+    </div>
+
+    <!-- ========== GALERİ / VİTRİN ========== -->
+    <section id="galeri" class="gallery">
+        <div class="section-art" aria-hidden="true">
+            <div class="sa-ring sa-r1"></div>
+            <div class="sa-ring sa-r2"></div>
+            <div class="sa-pet sa-p1">🦜</div>
+            <div class="sa-pet sa-p2">🐠</div>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Ürün Kategorileri</span>
+                <h2 class="section-title">Vitrinimizden <span class="highlight">Seçmeler</span></h2>
+                <p class="section-desc">Geniş ürün yelpazemizden bazı kategoriler. Detaylı bilgi için bizimle iletişime geçin.</p>
+            </div>
+            <div class="gallery-grid">
+
+                <div class="gallery-card animate-on-scroll">
+                    <div class="gallery-visual" style="--card-bg: #FEF3C7;">
+                        <div class="gallery-emoji">🐱</div>
+                        <div class="gallery-bg-emoji">🐱</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Kedi Mamaları</h3>
+                        <p>Yaş mama, kuru mama ve özel diyet ürünleri</p>
+                        <span class="gallery-tag">Detaylı bilgi için iletişime geçin</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card animate-on-scroll delay-1">
+                    <div class="gallery-visual" style="--card-bg: #DCFCE7;">
+                        <div class="gallery-emoji">🐶</div>
+                        <div class="gallery-bg-emoji">🐶</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Köpek Aksesuarları</h3>
+                        <p>Tasma, boyunluk, giysi ve daha fazlası</p>
+                        <span class="gallery-tag">Detaylı bilgi için iletişime geçin</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card animate-on-scroll delay-2">
+                    <div class="gallery-visual" style="--card-bg: #DBEAFE;">
+                        <div class="gallery-emoji">🐠</div>
+                        <div class="gallery-bg-emoji">🐠</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Akvaryum Ürünleri</h3>
+                        <p>Akvaryumlar, filtreler, dekorlar ve balık maması</p>
+                        <span class="gallery-tag">Detaylı bilgi için iletişime geçin</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card animate-on-scroll">
+                    <div class="gallery-visual" style="--card-bg: #FEE2E2;">
+                        <div class="gallery-emoji">🦜</div>
+                        <div class="gallery-bg-emoji">🦜</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Kuş Kafesleri</h3>
+                        <p>Her boyut ve modelde kafesler ve kuş aksesuarları</p>
+                        <span class="gallery-tag">Detaylı bilgi için iletişime geçin</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card animate-on-scroll delay-1">
+                    <div class="gallery-visual" style="--card-bg: #E0E7FF;">
+                        <div class="gallery-emoji">🧴</div>
+                        <div class="gallery-bg-emoji">🧴</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Bakım Ürünleri</h3>
+                        <p>Şampuan, fırça, tıraş malzemeleri ve daha fazlası</p>
+                        <span class="gallery-tag">Detaylı bilgi için iletişime geçin</span>
+                    </div>
+                </div>
+
+                <div class="gallery-card animate-on-scroll delay-2">
+                    <div class="gallery-visual" style="--card-bg: #FCE7F3;">
+                        <div class="gallery-emoji">🎾</div>
+                        <div class="gallery-bg-emoji">🎾</div>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Oyuncaklar</h3>
+                        <p>Tüm evcil hayvanlar için eğlenceli ve güvenli oyuncaklar</p>
+                        <span class="gallery-tag">Detaylı bilgi için iletişime geçin</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HAYVAN GEÇİŞ ŞERİDİ 3: Tüm Dostlar ===== -->
+    <div class="animal-parade" aria-hidden="true">
+        <div class="parade-track"><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🐹</span><span class="paw">🐾</span><span>🐇</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🐹</span><span class="paw">🐾</span><span>🐇</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span></div>
+        <div class="parade-track" aria-hidden="true"><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🐹</span><span class="paw">🐾</span><span>🐇</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🐹</span><span class="paw">🐾</span><span>🐇</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span></div>
+        <div class="parade-track" aria-hidden="true"><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🐹</span><span class="paw">🐾</span><span>🐇</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>🐦</span><span class="paw">🐾</span><span>🐠</span><span class="paw">🐾</span><span>🐹</span><span class="paw">🐾</span><span>🐇</span><span class="paw">🐾</span><span>🦜</span><span class="paw">🐾</span><span>🐕</span><span class="paw">🐾</span></div>
+    </div>
+
+    <!-- ========== NEDEN BİZ ========== -->
+    <section id="neden-biz" class="why-us">
+        <div class="section-art sa-why" aria-hidden="true">
+            <div class="sa-ring sa-r1"></div>
+            <div class="sa-ring sa-r2"></div>
+            <div class="sa-pet sa-p1">🐾</div>
+            <div class="sa-pet sa-p2">🐶</div>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag why-tag">Neden Biz?</span>
+                <h2 class="section-title why-title">Bizi Tercih Etmeniz İçin <span class="highlight-white">4 Neden</span></h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card animate-on-scroll">
+                    <div class="why-icon">⚡</div>
+                    <h3>Hızlı İletişim</h3>
+                    <p>Sorularınıza en kısa sürede yanıt veriyoruz. Telefon veya sosyal medya üzerinden anında ulaşabilirsiniz.</p>
+                </div>
+                <div class="why-card animate-on-scroll delay-1">
+                    <div class="why-icon">🏆</div>
+                    <h3>Kaliteli Hizmet</h3>
+                    <p>Yılların deneyimi ve uzman kadromuzla her zaman en yüksek kalitede hizmet sunuyoruz.</p>
+                </div>
+                <div class="why-card animate-on-scroll delay-2">
+                    <div class="why-icon">💎</div>
+                    <h3>Uygun Çözümler</h3>
+                    <p>Her bütçeye uygun çözümler sunarak evcil hayvanınız için en iyisini almanıza yardımcı oluyoruz.</p>
+                </div>
+                <div class="why-card animate-on-scroll delay-3">
+                    <div class="why-icon">❤️</div>
+                    <h3>Evcil Dostlara Özel İlgi</h3>
+                    <p>Her evcil hayvana bireysel ilgi gösteriyor, onların özel ihtiyaçlarına göre öneriler sunuyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HAYVAN GEÇİŞ ŞERİDİ 4: Sevgi & Dostluk (ters yön) ===== -->
+    <div class="animal-parade parade-warm" aria-hidden="true">
+        <div class="parade-track reverse"><span>❤️</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>⭐</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>💛</span><span class="paw">🐾</span><span>🌟</span><span class="paw">🐾</span><span>🏠</span><span class="paw">🐾</span><span>✨</span><span class="paw">🐾</span><span>❤️</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>⭐</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>💛</span><span class="paw">🐾</span><span>🌟</span><span class="paw">🐾</span><span>🏠</span><span class="paw">🐾</span><span>✨</span><span class="paw">🐾</span></div>
+        <div class="parade-track reverse" aria-hidden="true"><span>❤️</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>⭐</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>💛</span><span class="paw">🐾</span><span>🌟</span><span class="paw">🐾</span><span>🏠</span><span class="paw">🐾</span><span>✨</span><span class="paw">🐾</span><span>❤️</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>⭐</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>💛</span><span class="paw">🐾</span><span>🌟</span><span class="paw">🐾</span><span>🏠</span><span class="paw">🐾</span><span>✨</span><span class="paw">🐾</span></div>
+        <div class="parade-track reverse" aria-hidden="true"><span>❤️</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>⭐</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>💛</span><span class="paw">🐾</span><span>🌟</span><span class="paw">🐾</span><span>🏠</span><span class="paw">🐾</span><span>✨</span><span class="paw">🐾</span><span>❤️</span><span class="paw">🐾</span><span>🐶</span><span class="paw">🐾</span><span>⭐</span><span class="paw">🐾</span><span>🐱</span><span class="paw">🐾</span><span>💛</span><span class="paw">🐾</span><span>🌟</span><span class="paw">🐾</span><span>🏠</span><span class="paw">🐾</span><span>✨</span><span class="paw">🐾</span></div>
+    </div>
+
+    <!-- ========== İLETİŞİM ========== -->
+    <section id="iletisim" class="contact">
+        <div class="section-art" aria-hidden="true">
+            <div class="sa-ring sa-r1"></div>
+            <div class="sa-ring sa-r2"></div>
+            <div class="sa-pet sa-p1">🐶</div>
+            <div class="sa-pet sa-p2">🐱</div>
+        </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">İletişim</span>
+                <h2 class="section-title">Bizimle <span class="highlight">İletişime</span> Geçin</h2>
+                <p class="section-desc">Sorularınız için bize ulaşın, en kısa sürede size geri dönelim.</p>
+            </div>
+            <div class="contact-grid">
+
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+90 (5XX) XXX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Adres</h4>
+                            <p>Petshop Caddesi No:1<br>Şehir, Türkiye</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📸</div>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@agalarpetshop</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4>Çalışma Saatleri</h4>
+                            <p>Pzt – Cmt: 09:00 – 19:00<br>Pazar: 10:00 – 17:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap animate-on-scroll delay-2">
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Ad Soyad</label>
+                            <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="05XX XXX XX XX">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Mesajınızı buraya yazın..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            Mesaj Gönder →
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            ✅ Mesajınız alındı! En kısa sürede size döneceğiz.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">🐾</span>
+                        <span class="logo-text footer-logo-text">Agalar <strong>Petshop</strong></span>
+                    </a>
+                    <p class="footer-slogan">Evcil dostlarınız için sevgiyle.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#hakkimizda">Hakkımızda</a></li>
+                        <li><a href="#hizmetler">Hizmetler</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li>Mama ve Aksesuar</li>
+                        <li>Evcil Hayvan Bakımı</li>
+                        <li>Veteriner Yönlendirme</li>
+                        <li>Kedi &amp; Köpek Ürünleri</li>
+                        <li>Danışmanlık</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Agalar Petshop — Tüm hakları saklıdır.</p>
+                <p>Evcil dostlarınız için ❤️ ile yapıldı</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Yukarı Çık Butonu -->
+    <button class="back-to-top" id="backToTop" aria-label="Yukarı çık">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
